@@ -6,7 +6,7 @@
 //  Copyright © 2017年 huangyuanqing. All rights reserved.
 //
 
-//ios9之前collectionview不支持悬停 使用这个layout悬停 多个section的时候这个layout会导致崩溃 还在排查中 建议先不使用
+//ios9之前collectionview不支持悬停 使用这个layout悬停
 import UIKit
 
 public let kStickFlowLayoutSectionZPosition:Int = 7

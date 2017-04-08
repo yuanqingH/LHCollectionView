@@ -116,11 +116,6 @@ class LHCollectionVCL: LHScrollVCL,UICollectionViewDelegate,UICollectionViewDele
         if let collection = self.collectionView {
             LHCollectionReusableView.register(for: collection, kind: UICollectionElementKindSectionHeader)
             LHCollectionReusableView.register(for: collection, kind: UICollectionElementKindSectionFooter)
-//            UICollectionReusableView.register(for: collection, kind: UICollectionElementKindSectionHeader)
-//            UICollectionReusableView.register(for: collection, kind: UICollectionElementKindSectionFooter)
-            
-            collection.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "UICollectionReusableHeaderView")
-            collection.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "UICollectionReusableFooterView")
 
         }
     }

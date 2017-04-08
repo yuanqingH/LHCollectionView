@@ -120,7 +120,9 @@ open class LHCollectionViewDataSource:NSObject,UICollectionViewDataSource {
             let reusableView2 = reusableView as! LHCollectionReusableView
             reusableView2.setObject(obj)
         }else{
-            reusableView = LHCollectionReusableView()
+            //不能直接这样创建 使用基类的LHCollectionReusableView去替代这种情况
+            //reusableView = LHCollectionReusableView()
+            reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "LHCollectionReusableView", for: indexPath)
         }
         
         return reusableView

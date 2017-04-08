@@ -16,8 +16,10 @@ class LHDemoRootVCL: LHCollectionDealVCL {
             let rect = CGRect.init(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height - 64)
             self.createCollectionView(rect)
             
-            //
-            //self.collectionView?.collectionViewLayout = LHCollectionViewStickFlowLayout()
+            let layout = LHCollectionViewStickFlowLayout()
+            layout.scrollDirection = .vertical
+            
+            self.collectionView?.collectionViewLayout = layout
         }
         
         self.registerClass()
